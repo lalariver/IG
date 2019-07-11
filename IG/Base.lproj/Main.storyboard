@@ -7,6 +7,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="jYV-TC-0J4">
+            <objects>
+                <viewController id="wru-CO-1AU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wih-6Y-s6j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bdt-aN-GeG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hE9-d3-poc">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hE9-d3-poc" id="KUP-fw-hSY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZC2-Op-7AC" firstAttribute="bottom" secondItem="bdt-aN-GeG" secondAttribute="bottom" id="7Ma-mv-VI0"/>
+                            <constraint firstItem="bdt-aN-GeG" firstAttribute="top" secondItem="ZC2-Op-7AC" secondAttribute="top" id="hbe-Ps-2Xz"/>
+                            <constraint firstItem="ZC2-Op-7AC" firstAttribute="trailing" secondItem="bdt-aN-GeG" secondAttribute="trailing" id="lSZ-Mp-MSe"/>
+                            <constraint firstItem="bdt-aN-GeG" firstAttribute="leading" secondItem="ZC2-Op-7AC" secondAttribute="leading" id="p1F-1G-Rw9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZC2-Op-7AC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="xzE-bM-UMa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZnX-Zz-OwO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="838"/>
+        </scene>
         <!--黃禾-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -37,7 +75,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="13051497_1236905176319687_6046501885454536981_n" translatesAutoresizingMaskIntoConstraints="NO" id="CdX-fh-mND">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="CdX-fh-mND">
                                                 <rect key="frame" x="17" y="8" width="103.5" height="103.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -48,63 +86,63 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-Tq-Fl2">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="64號" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-Tq-Fl2">
                                                 <rect key="frame" x="278" y="237" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-qV-Bfo">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="玩具" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-qV-Bfo">
                                                 <rect key="frame" x="139" y="237" width="137" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="dai-xI-EYu">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="上流" translatesAutoresizingMaskIntoConstraints="NO" id="dai-xI-EYu">
                                                 <rect key="frame" x="0.0" y="237" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="Fnd-5H-JRc">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="阿拉丁" translatesAutoresizingMaskIntoConstraints="NO" id="Fnd-5H-JRc">
                                                 <rect key="frame" x="278" y="382" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="No2-Kn-vNP">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X戰警" translatesAutoresizingMaskIntoConstraints="NO" id="No2-Kn-vNP">
                                                 <rect key="frame" x="139" y="382" width="137" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="OPl-I1-fnp">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MIB" translatesAutoresizingMaskIntoConstraints="NO" id="OPl-I1-fnp">
                                                 <rect key="frame" x="0.0" y="382" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="umR-1O-yDY">
-                                                <rect key="frame" x="278" y="527" width="136" height="137"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="復仇" translatesAutoresizingMaskIntoConstraints="NO" id="umR-1O-yDY">
+                                                <rect key="frame" x="278" y="527" width="136" height="137.00000000000006"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="NK6-GJ-bjc">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="捍衛" translatesAutoresizingMaskIntoConstraints="NO" id="NK6-GJ-bjc">
                                                 <rect key="frame" x="139" y="527" width="137" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="izC-PR-1Kl">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="哥吉拉" translatesAutoresizingMaskIntoConstraints="NO" id="izC-PR-1Kl">
                                                 <rect key="frame" x="0.0" y="527" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="GxW-FN-s4y">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="驚奇" translatesAutoresizingMaskIntoConstraints="NO" id="GxW-FN-s4y">
                                                 <rect key="frame" x="278" y="679" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="edP-GR-IWn">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="庫爾" translatesAutoresizingMaskIntoConstraints="NO" id="edP-GR-IWn">
                                                 <rect key="frame" x="139" y="679" width="137" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yhe-yE-XP4">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="沙贊" translatesAutoresizingMaskIntoConstraints="NO" id="Yhe-yE-XP4">
                                                 <rect key="frame" x="0.0" y="679" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="8Gd-rN-ksX">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Gd-rN-ksX">
                                                 <rect key="frame" x="278" y="824" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="fCs-q4-BOF">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="幸福" translatesAutoresizingMaskIntoConstraints="NO" id="fCs-q4-BOF">
                                                 <rect key="frame" x="139" y="824" width="137" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="GAn-t3-2CQ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="艾莉塔" translatesAutoresizingMaskIntoConstraints="NO" id="GAn-t3-2CQ">
                                                 <rect key="frame" x="0.0" y="824" width="136" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -133,11 +171,11 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="125.89285714285714"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Inw-ox-jWQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X9e-aC-3Pr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jVt-2Q-wW7"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="jVt-2Q-wW7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WVJ-iL-GuE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -163,6 +201,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="X9e-aC-3Pr" kind="relationship" relationship="viewControllers" id="OXz-5h-QuV"/>
+                        <segue destination="wru-CO-1AU" kind="relationship" relationship="viewControllers" id="6lk-0M-jIa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Po6-i2-BDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -171,9 +210,21 @@
         </scene>
     </scenes>
     <resources>
-        <image name="01" width="640" height="640"/>
-        <image name="03" width="640" height="640"/>
         <image name="1" width="720" height="450"/>
-        <image name="13051497_1236905176319687_6046501885454536981_n" width="720" height="720"/>
+        <image name="64號" width="188" height="269"/>
+        <image name="MIB" width="184" height="273"/>
+        <image name="X戰警" width="184" height="273"/>
+        <image name="me" width="720" height="720"/>
+        <image name="上流" width="188" height="268"/>
+        <image name="哥吉拉" width="225" height="224"/>
+        <image name="幸福" width="300" height="168"/>
+        <image name="庫爾" width="188" height="268"/>
+        <image name="復仇" width="236" height="214"/>
+        <image name="捍衛" width="188" height="268"/>
+        <image name="沙贊" width="186" height="271"/>
+        <image name="玩具" width="184" height="273"/>
+        <image name="艾莉塔" width="184" height="273"/>
+        <image name="阿拉丁" width="300" height="168"/>
+        <image name="驚奇" width="184" height="273"/>
     </resources>
 </document>
